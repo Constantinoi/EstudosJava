@@ -1,0 +1,40 @@
+-ESCOPO
+
+--Variaveis Locais
+	declaradas dentro de Metodos e construtores
+tambem consideramos parametros como variariavei locais.
+
+o seu ciclo de vida do inicio ao fim de um { } -Bloco
+
+--Variaveis Instância
+
+variaveis de instancia ou de objeto são os atributos de um obj;
+são declaradas dentro da classe.
+
+--Variaveis Estática(class variables)
+
+são variaveis compartilhadas por todas as instancias
+de uma classe, em sua declaração possuem a palavra chave
+static.
+	ex. Pessoa p = new Pessoa();
+		p.id; //acessando pelo obj
+		Pessoa.id;//acessado diretamente na classe
+
+--Variaveis com mesmo nome
+
+não e possivel declara variaveis com mesmo nome dentro do mesmo escopo;
+//erro de compilacao
+
+tambem não podemos declara variaveis locais com mesmo nome de parametros;
+
+podemos declarar variaveis locais ou parametros com o mesmo nome de variaveis de objeto ou instancia
+isso é chamado de 'shadowing', para o funcionamento a variavel de instancia ou objeto deve receber
+a palavra chave 'this' ou nome da classe;
+
+	ex. Pessoa.x = x;
+		this.y = y;
+
+se nao usarmo o this ou nome da classe o compilador usa a variavel de menor escopo;
+
+
+-ESTUTURA DE UMA CLASSE JAVA
